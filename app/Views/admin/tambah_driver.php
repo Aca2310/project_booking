@@ -31,9 +31,9 @@ echo view('admin/templet/navbar');
                 </a>
             </li>
             <li>
-                <a class="nav-link" id="ruangan-tab" data-toggle="pill" href="ruangan" role="tab" aria-controls="ruangan" aria-selected="false">
+                <a class="nav-link" id="driver-tab" data-toggle="pill" href="ruangan" role="tab" aria-controls="driver" aria-selected="false">
                     <i class="fa-solid fa-door-open" style="color: #ffffff;"></i>
-                    <span class="text">Ruangan</span>
+                    <span class="text">ruangan</span>
                 </a>
             </li>
             <li>
@@ -42,6 +42,7 @@ echo view('admin/templet/navbar');
                     <span class="text">Laporan</span>
                 </a>
             </li>
+
         </ul>
         <ul class="side-menu">
             <li>
@@ -58,30 +59,25 @@ echo view('admin/templet/navbar');
 <main class="main-content">
     <div style="margin-left: 35px;">
         <h2>Tambah Data Driver</h2>
-        <div class="card-body">
-            <div class="col-sm-6 mb-3">
-                <label for="Nama-ruangan" style="color: #281362; font-weight: 600;">Nama<sup class="text-danger">*</sup></label>
-                <input type="text" class="form-control" id="Nama-ruangan" name="Nama-ruangan" style="width: 80%; border-radius: 10px;" placeholder="Nama Driver">
+        <form action="<?= site_url('admin/simpan_driver'); ?>" method="post">
+            <div class="card-body">
+            <div class="form-group">
+                <div class="col-sm-6 mb-3">
+                    <label for="Nama-driver" style="color: #281362; font-weight: 600;">Nama<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" id="Nama-driver" name="nama" style="width: 80%; border-radius: 10px;" placeholder="Nama Driver" required>
+                </div>
+                <div class="col-sm-6 mb-3">
+                    <label for="telp" style="color: #281362; font-weight: 600;">Telp<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" id="telp" name="telp" style="width: 80%; border-radius: 10px;" placeholder="Telp Driver" required>
+                </div>
             </div>
-            <div class="col-sm-6 mb-3">
-                <label for="Kapasitas" style="color: #281362; font-weight: 600;">Telp<sup class="text-danger">*</sup></label>
-                <input type="text" class="form-control" id="Kapasitas" name="Kapasitas" style="width: 80%; border-radius: 10px;" placeholder="Telp Driver">
+            <div class="form-group row justify-content-between text-right">
+                <div class="col-sm-6">
+                    <a class="btn btn-secondary" style="color: #ffffff;width: 100px; margin-right: 2%; border-radius: 20px;" href="<?= site_url('admin/driver'); ?>">Batal</a>
+                    <button type="submit" class="btn btn-success" style="color: #ffffff; margin-right: 20%; border-radius: 20px">Simpan</button>
+                </div>
             </div>
-        </div>
-        <div class="form-group row justify-content-between text-right">
-
-            <div class="col-sm-6">
-                <a class="btn btn-secondary" style="color: #ffffff;width: 100px; margin-right: 2%; border-radius: 20px;" href="Driver">Batal</a>
-                <button class="btn btn-success" style="color: #ffffff; margin-right: 20%; border-radius: 20px">Simpan</button>
-            </div>
-
-        </div>
-    </div>
+        </form>
     </div>
 </main>
-
-
-
 </body>
-
-</html>

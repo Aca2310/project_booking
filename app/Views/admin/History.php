@@ -98,6 +98,7 @@ echo view('admin/templet/navbar');
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
+            </table>
         </div>
         <div class="pagination-container">
             <div class="" id="">

@@ -15,4 +15,22 @@ class RuanganControllers extends BaseController
 
         return view('admin/ruangan', $data);
     }
+
+    public function tambah_ruangan(){
+        return view('admin/tambah_ruangan');
+    }
+
+    public function simpan_ruangan(){
+        $ruanganmodel = new RuanganModel();
+
+        $data = [
+            'nama' => $this->request->getPost('nama'),
+            'kapasitas' => $this->request->getPost('kapasitas'),
+            'fasilitas' => $this->request->getPost('fasilitas'),
+        ];
+
+        $ruanganmodel->insert($data);
+
+        return redirect()->to(site_url('admin/ruangan'));
+    }
 }

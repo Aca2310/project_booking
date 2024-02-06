@@ -7,4 +7,5 @@ use CodeIgniter\Model;
 class Drivermodel extends Model
 {
     protected $table            = 'driver';
+    protected $allowedFields = ['nama', 'telp'];
 }

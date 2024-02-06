@@ -96,9 +96,9 @@ echo view('admin/templet/navbar');
                         <tr>
                             <td style="text-align: center;"><?= $counter++; ?></td>
                             <td class="small-text"><?= $user['username']; ?></td>
-                            <td class="small-text"><?= $user['name']; ?></td>
+                            <td class="small-text"><?= $user['nama']; ?></td>
                             <td class="small-text"><?= $user['email']; ?></td>
-                            <td class="small-text"><?= $user['phone_no']; ?></td>
+                            <td class="small-text"><?= $user['telp']; ?></td>
                             <td class="small-text"><?= $user['role']; ?></td>
                             <td class="small-text">
                                 <div class="icon-container">
