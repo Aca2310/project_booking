@@ -92,18 +92,22 @@ echo view('admin/templet/navbar');
                 </thead>
                 <tbody>
                     <?php $counter = 1; ?>
-                    <?php foreach ($users as $user) : ?>
+                    <?php foreach ($users as $u) : ?>
                         <tr>
                             <td style="text-align: center;"><?= $counter++; ?></td>
-                            <td class="small-text"><?= $user['username']; ?></td>
-                            <td class="small-text"><?= $user['nama']; ?></td>
-                            <td class="small-text"><?= $user['email']; ?></td>
-                            <td class="small-text"><?= $user['telp']; ?></td>
-                            <td class="small-text"><?= $user['role']; ?></td>
+                            <td class="small-text"><?= $u['username']; ?></td>
+                            <td class="small-text"><?= $u['nama']; ?></td>
+                            <td class="small-text"><?= $u['email']; ?></td>
+                            <td class="small-text"><?= $u['telp']; ?></td>
+                            <td class="small-text"><?= $u['role']; ?></td>
                             <td class="small-text">
-                                <div class="icon-container">
-                                    <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_user'"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                <div class="icon-container" style="margin-left: 35%;">
+                                    <a href="<?= site_url('admin/edit_akun/' . $u['username']); ?>">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                    <a href="<?= site_url('admin/deleteAkun/' . $u['username']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus User ini?')">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
                                 </div>
                             </td>
                         </tr>

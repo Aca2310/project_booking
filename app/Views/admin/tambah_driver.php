@@ -73,7 +73,7 @@ echo view('admin/templet/navbar');
             </div>
             <div class="form-group row justify-content-between text-right">
                 <div class="col-sm-6">
-                    <a class="btn btn-secondary" style="color: #ffffff;width: 100px; margin-right: 2%; border-radius: 20px;" href="<?= site_url('admin/driver'); ?>">Batal</a>
+                    <a class="btn btn-secondary" style="color: #ffffff;width: 100px; margin-right: 2%; border-radius: 20px;" href="<?= site_url('admin/Driver'); ?>">Batal</a>
                     <button type="submit" class="btn btn-success" style="color: #ffffff; margin-right: 20%; border-radius: 20px">Simpan</button>
                 </div>
             </div>

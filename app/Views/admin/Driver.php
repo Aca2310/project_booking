@@ -95,8 +95,12 @@ echo view('admin/templet/navbar');
                             <td class="small-text"><?= $D['telp']; ?></td>
                             <td class="small-text">
                                 <div class="icon-container" style="margin-left: 35%;">
-                                    <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_driver'"></i>
-                                    <i class="fa-solid fa-trash"></i>
+                                    <a href="<?= site_url('admin/edit_driver/' . $D['id_driver']); ?>">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                    <a href="<?= site_url('admin/delete_driver/' . $D['id_driver']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus driver ini?')">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
                                 </div>
                             </td>
                         </tr>
