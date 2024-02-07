@@ -47,4 +47,8 @@ class Driver extends BaseController
 
         return redirect()->to(site_url('admin/driver'));
     }
+
+    public function edit_driver(){
+        return view ('admin/edit_driver');
+    }
 }

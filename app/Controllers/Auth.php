@@ -20,6 +20,27 @@ class Auth extends BaseController
         return view('login');
     }
 
+    public function processLogin()
+{
+    $username = $this->request->getPost('username');
+    $password = $this->request->getPost('password');
+
+    $userModel = new UserModel();
+    $user = $userModel->where('username', $username)->first();
+
+    if ($user && password_verify($password, $user['password'])) {
+        if ($user['role'] == 'admin') {
+            return redirect()->to('admin/dashboard_admin');
+        } elseif ($user['role'] == 'karyawan') {
+            return redirect()->to('user/dashboard');
+        }
+    }
+
+    // Autentikasi gagal, set flashdata error
+    return redirect()->to('login')->with('error', 'Username atau password salah.');
+}
+
+
     public function tambah_akun()
     {
         return view('admin/halaman_tambah_akun');
@@ -68,5 +89,9 @@ class Auth extends BaseController
         $userModel->insert($data);
 
         return redirect()->to(site_url('admin/User'));
+    }
+
+    public function edit_user(){
+        return view ('admin/edit_user');
     }
 }

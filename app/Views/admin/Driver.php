@@ -95,7 +95,7 @@ echo view('admin/templet/navbar');
                             <td class="small-text"><?= $D['telp']; ?></td>
                             <td class="small-text">
                                 <div class="icon-container" style="margin-left: 35%;">
-                                    <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_ruangan'"></i>
+                                    <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_driver'"></i>
                                     <i class="fa-solid fa-trash"></i>
                                 </div>
                             </td>
@@ -118,5 +118,3 @@ echo view('admin/templet/navbar');
 </main>
 
 </body>
-
-</html>

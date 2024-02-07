@@ -33,4 +33,13 @@ class RuanganControllers extends BaseController
 
         return redirect()->to(site_url('admin/ruangan'));
     }
+
+    public function booking_ruangan(){
+        return view('user/dashboard');
+    }
+
+
+    public function edit_ruangan(){
+        return view ('admin/edit_ruangan');
+    }
 }

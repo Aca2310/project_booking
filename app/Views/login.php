@@ -10,7 +10,21 @@
             </div>
 
             <div class="col-md-6 order-md-2">
-                <form class="login-form" method="POST" action="#" onsubmit="return loginapi()">
+                <?php if (session()->has('error')) : ?>
+                    <div class="alert alert-danger" role="alert" >
+                        <?= session('error') ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <script>
+                        // Close the alert when the close button is clicked
+                        document.querySelector('.alert .close').addEventListener('click', function() {
+                            document.querySelector('.alert').style.display = 'none';
+                        });
+                    </script>
+                <?php endif; ?>
+                <form class="login-form" action="<?= site_url('auth/processLogin'); ?>" method="post">
                     <h2 class="login-text">Login</h2>
                     <div class="form-group">
                         <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
@@ -25,3 +39,7 @@
             </div>
         </div>
     </div>
+
+    <!-- Tambahkan di tampilan halaman login -->
+
+    <!-- Akhir bagian notifikasi -->
