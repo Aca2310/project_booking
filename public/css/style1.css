@@ -44,7 +44,7 @@ li {
 #sidebar .side-menu li {
     width: 100%;
 }
-
+/* 
 #sidebar .side-menu li.active {
     background: #389CDB;
     position: relative;
@@ -69,7 +69,7 @@ li {
 #sidebar .side-menu li.active::after {
     bottom: -40px;
     box-shadow: 20px -20px 0 var(--grey);
-}
+} */
 
 .side-menu a {
     color: #FFFFFF;
@@ -96,8 +96,15 @@ li {
     padding-left: 230px; /* Sesuaikan nilai berdasarkan lebar sidebar Anda */
 }
 
+.profile-tab-nav{
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
 #logout-tab {
-    margin-top:123%;
+    margin-bottom:50px;
     background: #F06823;
     height: 50px;
     display: flex;
@@ -134,9 +141,6 @@ tbody td .fa-eye{
     background-color: #AAACAB;
     border-radius: 30px;
     padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #000000;
 }
 
@@ -408,3 +412,85 @@ tbody td .fa-pen-to-square{
     text-align: center;
 }
 
+/* Style for the sidebar and tabs */
+#sidebar {
+  position: fixed;
+  width: 230px;
+  height: 100%;
+  background: #004E98;
+  transition: .3s ease;
+  overflow-x: hidden;
+  color: #ffffff;
+  font-family: var(--lato);
+  font-size: 14px;
+}
+
+#sidebar .side-menu {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar .side-menu li {
+  width: 100%;
+}
+
+.nav-link:is(:link, :active, :visited) {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.nav-link:is(:link, :active, :visited).active {
+  background: #389CDB;
+}
+
+
+.tab-content {
+  padding: 15px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+
+ #sidebar .menu .item a .dropdown{
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+ }
+ 
+ #sidebar .menu .item .sub-menu{
+  display: none;
+ }
+ 
+ #sidebar .menu .item .sub-menu a{
+  padding-left: 65px;
+ }
+
+ #sidebar .menu .item .sub-btn{
+  cursor: pointer;
+ }
+ 
+ .rotate{
+  transform: rotate(90deg);
+ }
+
+ /* CSS */
+.trash-icon-container {
+  background-color: #ffffff; /* White background color */
+  display: inline-block; /* Ensure the container only takes as much space as necessary */
+  padding: 5px; /* Add padding for spacing around the icon */
+  border-radius: 5px; /* Optional: Add rounded corners for a nicer look */
+}
+
+.fa-trash {
+  color: #ff0000; /* Red color for the trash icon */
+}
