@@ -20,9 +20,7 @@
 
   <form class="styled-box-6">
     <div class="table-responsive">
-      <table role="table" aria-busy="false" aria-colcount="6"
-        class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table"
-        id="__BVID__56">
+      <table role="table" aria-busy="false" aria-colcount="6" class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table" id="__BVID__56">
         <thead class="thead-blue">
           <tr>
             <th style="text-align: center;">No.</th>
@@ -34,17 +32,17 @@
         <tbody>
           <?php $counter = 1; ?>
           <?php foreach ($driver as $D) : ?>
-          <tr>
-            <td style="text-align: center;"><?= $counter++; ?></td>
-            <td class="small-text"><?= $D['nama']; ?></td>
-            <td class="small-text"><?= $D['telp']; ?></td>
-            <td class="small-text">
-              <div class="icon-container" style="margin-left: 35%;">
-                <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_driver'"></i>
-                <i class="fa-solid fa-trash"></i>
-              </div>
-            </td>
-          </tr>
+            <tr>
+              <td style="text-align: center;"><?= $counter++; ?></td>
+              <td class="small-text"><?= $D['nama']; ?></td>
+              <td class="small-text"><?= $D['telp']; ?></td>
+              <td class="small-text">
+                <div class="icon-container" style="margin-left: 35%;">
+                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_driver'"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
           <?php endforeach; ?>
       </table>
     </div>
@@ -61,4 +59,5 @@
   </form>
   </div>
 </main>
-<?= $this->endSection(); ?>
+<<<<<<< HEAD <?= $this->endSection(); ?>=======</body>
+  >>>>>>> 388111ae696d4e49d3781e6d42e3c28534c153a1

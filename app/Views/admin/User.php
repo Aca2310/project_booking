@@ -19,9 +19,7 @@
 
   <form class="styled-box-6">
     <div class="table-responsive">
-      <table role="table" aria-busy="false" aria-colcount="6"
-        class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table"
-        id="__BVID__56">
+      <table role="table" aria-busy="false" aria-colcount="6" class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table" id="__BVID__56">
         <thead class="thead-blue">
           <tr>
             <th style="text-align: center;">No.</th>
@@ -38,20 +36,20 @@
         <tbody>
           <?php $counter = 1; ?>
           <?php foreach ($users as $user) : ?>
-          <tr>
-            <td style="text-align: center;"><?= $counter++; ?></td>
-            <td class="small-text"><?= $user['username']; ?></td>
-            <td class="small-text"><?= $user['nama']; ?></td>
-            <td class="small-text"><?= $user['email']; ?></td>
-            <td class="small-text"><?= $user['telp']; ?></td>
-            <td class="small-text"><?= $user['role']; ?></td>
-            <td class="small-text">
-              <div class="icon-container">
-                <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_user'"></i>
-                <i class="fa-solid fa-trash"></i>
-              </div>
-            </td>
-          </tr>
+            <tr>
+              <td style="text-align: center;"><?= $counter++; ?></td>
+              <td class="small-text"><?= $user['username']; ?></td>
+              <td class="small-text"><?= $user['nama']; ?></td>
+              <td class="small-text"><?= $user['email']; ?></td>
+              <td class="small-text"><?= $user['telp']; ?></td>
+              <td class="small-text"><?= $user['role']; ?></td>
+              <td class="small-text">
+                <div class="icon-container">
+                  <i class="fa-solid fa-pen-to-square" onclick="window.location.href='edit_user'"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </td>
+            </tr>
 
           <?php endforeach; ?>
         </tbody>

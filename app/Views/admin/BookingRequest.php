@@ -10,9 +10,7 @@
   </div>
   <form class="styled-box-6">
     <div class="table-responsive">
-      <table role="table" aria-busy="false" aria-colcount="6"
-        class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table"
-        id="__BVID__56">
+      <table role="table" aria-busy="false" aria-colcount="6" class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table" id="__BVID__56">
         <thead class="thead-blue">
           <tr>
             <th style="text-align: center;">No.</th>

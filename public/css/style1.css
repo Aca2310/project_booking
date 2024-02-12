@@ -51,6 +51,10 @@ li {
     box-sizing: border-box;
 }
 
+.nav-link.active {
+    background-color: #389CDB; /* Ganti dengan warna yang Anda inginkan */
+}
+
 #sidebar .side-menu li.active::before,
 #sidebar .side-menu li.active::after {
     content: '';
@@ -96,11 +100,16 @@ li {
     padding-left: 230px; /* Sesuaikan nilai berdasarkan lebar sidebar Anda */
 }
 
+<<<<<<< HEAD
 .profile-tab-nav{
   height: 100vh;
   display:flex;
   flex-direction: column;
   justify-content:space-between;
+=======
+.submenu li a.active {
+    background-color: #ffffff;
+>>>>>>> 388111ae696d4e49d3781e6d42e3c28534c153a1
 }
 
 #logout-tab {
