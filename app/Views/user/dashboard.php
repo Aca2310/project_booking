@@ -107,8 +107,6 @@ echo view('templet/admin/head');
                                 <th>Jam Selesai</th>
                                 <th>PIC</th>
                                 <th>Section</th>
-
-
                             </tr>
                         </thead>
                         <tbody>
@@ -121,6 +119,7 @@ echo view('templet/admin/head');
                                 <td class="small-text">Husna Afiqah Y</td>
                                 <td class="small-text">shhsall</td>
                             </tr>
+                            
                         </tbody>
                     </table>
                 </div>

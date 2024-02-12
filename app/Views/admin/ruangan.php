@@ -122,5 +122,3 @@ echo view('admin/templet/navbar');
     </form>
     </div>
 </main>
-
-</body>

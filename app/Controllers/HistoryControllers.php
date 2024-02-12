@@ -23,25 +23,15 @@ class HistoryControllers extends BaseController
 
     public function BookingRequest()
     {
-        $bokruanganModel = new bokruanganModel();
-        $data['bookRoom'] =  $bokruanganModel->findAll();
-
-        $bokDriverModel = new bokdriverModel();
-        $data['bookdriver'] =  $bokDriverModel->findAll();
-
-        $mergedData = array_merge($data['bookRoom'], $data['bookRoom']);
-        return view('admin/BookingRequest', ['rekapData' => $mergedData]);
+        
+        $data['active_tab'] = 'dashboard_admin';
+        return view('admin/BookingRequest', $data);
     }
 
     public function dashboard()
     {
-        $bokruanganModel = new bokruanganModel();
-        $data['bookRoom'] =  $bokruanganModel->findAll();
+        $data['active_tab'] = 'dashboard_admin';
 
-        $bokDriverModel = new bokdriverModel();
-        $data['bookdriver'] =  $bokDriverModel->findAll();
-
-        $mergedData = array_merge($data['bookRoom'], $data['bookRoom']);
-        return view('admin/dashboard_admin', ['rekapData' => $mergedData]);
+        return view('admin/dashboard_admin', $data);
     }
 }

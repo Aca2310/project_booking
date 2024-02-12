@@ -10,4 +10,5 @@ class DriverModel extends Model
     protected $primaryKey = 'id_driver';
     protected $allowedFields = ['nama', 'telp'];
 
+   
 }

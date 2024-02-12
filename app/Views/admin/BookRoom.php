@@ -2,17 +2,17 @@
 echo view('admin/templet/header');
 echo view('admin/templet/navbar');
 ?>
-<!-- SIDEBAR -->
+
 <section id="sidebar">
     <div class="profile-tab-nav border-right">
         <ul class="side-menu top">
-            <li class="active">
+            <li>
                 <a class="nav-link" id="dashboard-tab" data-toggle="pill" href="dashboard_admin" role="tab" aria-controls="dashboard" aria-selected="false" style="margin-top: 5%; ">
                     <i class="fa-solid fa-chart-column" style="color: #ffffff;"></i>
                     <span class="text">Dashboard</span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a class="nav-link" id="BookingRequest-tab" data-toggle="pill" href="BookingRequest" role="tab" aria-controls="BookingRequests" aria-selected="false">
                     <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
                     <span class="text">Booking Request</span>
@@ -20,7 +20,7 @@ echo view('admin/templet/navbar');
                 <ul class="submenu">
                     <li><a class="nav-link" href="booking_room">Booking Room</a>
                     </li>
-                    <li><a class="nav-link" href="booking_driver">Booking Driver</a></li>
+                    <li><a class="nav-link" href="booking_ruangan">Booking ruangan</a></li>
                 </ul>
             </li>
             <li>
@@ -30,9 +30,9 @@ echo view('admin/templet/navbar');
                 </a>
             </li>
             <li>
-                <a class="nav-link" id="Driver-tab" data-toggle="pill" href="Driver" role="tab" aria-controls="Driver" aria-selected="false">
+                <a class="nav-link" id="ruangan-tab" data-toggle="pill" href="ruangan" role="tab" aria-controls="ruangan" aria-selected="false">
                     <i class="fa-solid fa-car" style="color: #ffffff;"></i>
-                    <span class="text">Driver</span>
+                    <span class="text">ruangan</span>
                 </a>
             </li>
             <li>
@@ -50,7 +50,6 @@ echo view('admin/templet/navbar');
         </ul>
         <ul class="side-menu">
             <li>
-            <li>
                 <a class="nav-link" id="logout-tab" data-toggle="pill" href="javascript:void(0)" role="tab" aria-controls="logout" aria-selected="false" onclick="logout()">
                     <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
                     <span class="text">Logout</span>
@@ -61,64 +60,58 @@ echo view('admin/templet/navbar');
 </section>
 
 <main class="main-content">
-    <ul class="box-info">
-        <li>
-            <i class="fa-solid fa-door-open" style="color: #ffffff;"></i>
-            <span class="text">
-                <h3 style="text-align: center;">0</h3>
-                <p style="text-align: center;">Total Booking Ruangan</p>
-            </span>
-        </li>
-        <li style="background: #BEBFC0;">
-            <i class="fa-solid fa-car"></i>
-            <span class="text">
-                <h3 style="text-align: center;">0</h3>
-                <p style="text-align: center;">Total Booking Driver</p>
-            </span>
-        </li>
-        <li style="background: #F06823;">
-            <i class="fa-regular fa-file" style="color: #ffffff;"></i>
-            <span class="text">
-                <h3 style="text-align: center;">0</h3>
-                <p style="text-align: center;">Total Aktivitas Booking</p>
-            </span>
-        </li>
-    </ul>
-    <div class="halo" style="margin-top: 3%;">
-        <h2> Booking Baru Baru Ini </h2>
+
+    <div class="haloa">
+        <h2> Booking Ruangan </h2>
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search" placeholder="Ketik kata kunci..." style="height: 10%; font-size:small;">
+        </div>
     </div>
     <form class="styled-box-6">
         <div class="table-responsive">
             <table role="table" aria-busy="false" aria-colcount="6" class="table b-table table-striped table-hover table-borderless border b-table-fixed b-table-stacked-sm custom-table" id="__BVID__56">
                 <thead class="thead-blue">
-                    <thead class="thead-blue">
-                        <tr>
-                            <th style="text-align: center;">No.</th>
-                            <th style="text-align: center;">Tanggal</th>
-                            <th style="text-align: center;">Jenis</th>
-                            <th style="text-align: center;">Kode Booking</th>
-                            <th style="text-align: center;">PIC</th>
-                            <th style="text-align: center;">Aksi</th>
-                        </tr>
-                    </thead>
-
+                    <tr>
+                        <th style="text-align: center;">No.</th>
+                        <th style="text-align: center;">Kode Booking</th>
+                        <th style="text-align: center;">PIC</th>
+                        <th style="text-align: center;">Tanggal</th>
+                        <th style="text-align: center;">Jam</th>
+                        <th style="text-align: center;">Durasi</th>
+                        <th style="text-align: center;">Aksi</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td style="text-align: center;">1</td>
-                        <td class="small-text" style="text-align: center;">15 Januari 2024</td>
-                        <td class="small-text" style="text-align: center;">Meeting Room 2</td>
-                        <td class="small-text" style="text-align: center;">09.00</td>
-                        <td class="small-text" style="text-align: center;">Husna Afiqah Y</td>
-                        <td class="small-text" style="text-align: center;">
-                            <button onclick="window.location.href='halaman_detail_booking'" class="detail">
-                                Detail
-                            </button>
-                        </td>
-
-                    </tr>
+                    <?php if (!empty($bookingRuangan)) : ?>
+                        <?php foreach ($bookingRuangan as $key => $BR) : ?>
+                            <tr>
+                                <td style="text-align: center;"><?php echo $key + 1; ?></td>
+                                <td class="small-text" style="text-align: center;"><?php echo $BR['id_booking_ruangan']; ?></td>
+                                <td class="small-text" style="text-align: center;"><?php echo $BR['nama']; ?></td>
+                                <td class="small-text" style="text-align: center;"><?php echo $BR['tanggal']; ?></td>
+                                <td class="small-text" style="text-align: center;"><?php echo $BR['jam_mulai'] . ' - ' . $BR['jam_selesai']; ?></td>
+                                <td class="small-text" style="text-align: center;"><?php echo calculateTotalJam($BR['jam_mulai'], $BR['jam_selesai']); ?></td>
+                                <td class="small-text">
+                                    <div class="icon-container">
+                                        <a href="<?= site_url('admin/detail_booking_room/' . $BR['id_booking_ruangan']); ?>">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </a>
+                                        <a href="<?= site_url('admin/delete_booking/' . $BR['id_booking_ruangan']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus Data ini?')">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <tr>
+                            <td colspan="6" style="text-align: center;">tidak ada request booking Room</td>
+                        </tr>
+                    <?php endif; ?>
                 </tbody>
             </table>
+
         </div>
         <div class="pagination-container">
             <div class="" id="">
@@ -134,6 +127,14 @@ echo view('admin/templet/navbar');
     </div>
 </main>
 
-</body>
+<?php
+function calculateTotalJam($jamMulai, $jamSelesai)
+{
+    $timeStart = strtotime($jamMulai);
+    $timeEnd = strtotime($jamSelesai);
 
-</html>
+    $hours = ($timeEnd - $timeStart) / 3600;
+
+    return $hours;
+}
+?>

@@ -11,7 +11,7 @@
 
             <div class="col-md-6 order-md-2">
                 <?php if (session()->has('error')) : ?>
-                    <div class="alert alert-danger" role="alert" >
+                    <div class="alert alert-danger" role="alert">
                         <?= session('error') ?>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>

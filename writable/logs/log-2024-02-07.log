@@ -824,3 +824,387 @@ INFO - 2024-02-07 07:58:40 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-02-07 07:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-02-07 07:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-02-07 08:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 08:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 08:38:06 --> ErrorException: Undefined variable $driver
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $driver', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:40:53 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:40:54 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:40:55 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 08:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 08:41:04 --> ErrorException: Undefined variable $bookingRuangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingRuangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:41:37 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:25 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:26 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:26 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:43:27 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 125.
+ 1 APPPATH\Views\user\dashboard.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 125)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:45:39 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:48:32 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:48:34 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:51:22 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:53:10 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:53:11 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:53:11 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:57:41 --> Error: Call to undefined function get()
+in APPPATH\Config\Routes.php on line 14.
+ 1 SYSTEMPATH\Router\RouteCollection.php(344): require()
+ 2 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 08:59:51 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+INFO - 2024-02-07 09:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 09:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-07 09:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-07 09:02:50 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:05:20 --> ErrorException: Undefined variable $bookruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:05:21 --> ErrorException: Undefined variable $bookruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:18 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:20 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:20 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:07:29 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:08:37 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:08:38 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:08:38 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:13:40 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
+CRITICAL - 2024-02-07 09:14:49 --> ErrorException: Undefined variable $booking_ruangan
+in APPPATH\Views\user\dashboard.php on line 116.
+ 1 APPPATH\Views\user\dashboard.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_ruangan', 'H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php', 116)
+ 2 SYSTEMPATH\View\View.php(228): include('H:\\ACA\\K TO P\\project\\app\\Views\\user\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/dashboard', [], true)
+ 5 APPPATH\Controllers\RuanganControllers.php(14): view('user/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RuanganControllers->booking_ruangan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RuanganControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('H:\\ACA\\K TO P\\project\\public\\index.php')
